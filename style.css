@@ -1,0 +1,373 @@
+/*------CSS Reset--------*/
+*{
+	padding : 0;
+	margin : 0;
+}
+
+/*----------Utility Classes-----------*/
+h1{
+	text-align : center;
+	color: #555 ! important;
+	padding-bottom: 10px;
+}
+h1::after{
+	content:'';
+	background : #007bff;
+	display: block;
+	height : 3px;
+	width : 170px;
+	margin : 20px auto 5px;
+}
+
+/*----------Navigation Bar --------------*/
+#nav-bar{
+	position : sticky;
+	top : 0;
+	z-index:20;
+	
+}
+#nav-bar h1{
+	font-family: 'Lobster', cursive;
+	font-size : 50px;
+	color : #c50e0e;
+}
+#nav-bar h1::after{
+	display: none;
+}
+.navbar-brand img{
+	height : 60px;
+	
+}
+.navbar-nav li{
+	padding : 0 10px;
+}
+.navbar-nav li a{
+	float : right;
+	text-align : left;
+}
+#nav-bar ul li a:hover{
+	color: #007bff!important;
+}
+.dropdown-item::after{
+	content:'';
+	background : red;
+	display: block;
+	height : 1px;
+	width : 150px;
+	margin : 10px auto 5px;
+}
+.dropdown-item:nth-last-child(1)::after{
+	display : none;
+}
+.navbar{
+	background : #fff;
+}
+.navbar-toggler{
+	border : none ! important;
+}
+.nav-link
+{
+	color : #555 ! important;
+	font-weight : 600;
+	font-size : 16px;
+}
+
+/*-----------Slider------------*/
+#slider{
+	width : 100%;
+}
+.carousel-caption{
+	top : 50%;
+	transform : translateY(-50%);
+	bottom : initial ! important;
+}
+.carousel-caption h5{
+	color : #fff;
+	font-size : 42px;
+	text-shadow : 4px 4px 3px black;
+}
+
+
+/*-----------About---------------*/
+#about{
+	padding-top:80px;
+	padding-bottom:80px;
+	color : #555;
+}
+#about .btn {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.about-content{
+	padding-top:20px;
+}
+.love-sign img{
+	height : 230px;	
+}
+
+/*--------------Services----------*/
+#services{
+	background : url('Images/Services Background.jpg') center center/cover;
+	background-attachment:fixed;
+	padding : 50px 0px;
+	opacity: 0.95;
+}
+#services h1{
+	text-align : center;
+	color : white ! important;
+	padding-top : 50px;
+	padding-bottom: 50px;
+}
+#services h1::after{
+	background : #fff;
+}
+#services h3{
+	font-size:32px;
+	color : yellow;
+	padding-top : 20px;
+	padding-bottom: 20px;
+	text-shadow:1px 1px 1px black;
+}
+#services p{
+	font-size: 23px;
+	margin-top:10px;
+	color: #efefef;
+	text-shadow:4px 4px 4px black;
+}
+.services .col-md-4:hover{
+	background : rgba(123,12,255, 0.5);
+	
+}
+
+
+/*-----------Team Members------------*/
+#team{
+	padding-top:50px;
+	padding-bottom:50px;
+	color : #555;
+}
+.profile-pic{
+	margin-top:25px;
+}
+.profile-pic .img-box{
+	opacity:1;
+	display : block;
+	position : relative;
+}
+.profile-pic .img-box img
+{
+	filter : grayscale(1);
+}
+.profile-pic .img-box img:hover
+{
+	filter : grayscale(0);
+	cursor : pointer;
+}
+.profile-pic h2{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top : 15px;
+	color : #007bff ! important;
+}
+.profile-pic h3{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top : 15px;
+}
+#team .fa{
+	height : 25px;
+	width : 25px;
+	color : #007bff ! important;
+	background: #fff;
+	padding : 4px;
+	border-radius : 50%;
+}
+.img-box ul{
+	padding : 15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity:0;
+}
+.img-box ul li{
+	padding :5px;
+	display : inline-block;
+}
+.img-box:hover ul{
+	opacity : 1;
+}
+.img-box ul, .img-box ul li{
+	transition : 0.5s;
+}
+
+/*-----------------Promo----------------*/
+#promo
+{
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4 )), url(Images/promo.jpg);
+	background-size : cover;
+	background-position : center;
+	color : #fff;
+	background-attachment : fixed;
+	text-align : center;
+	padding : 100px;
+	font-family: sans-serif;
+	font-size : 38px;
+}
+
+/*--------Price Plans----------*/
+#price{
+padding : 40px 0;
+background-color : #efefef;
+}
+.single-price{
+	margin : 10px auto;
+	display : inline;
+	float : left;
+	width : 100%;
+	backlground-color: #fff;
+	transition: 0.5s;
+}
+.single-price:hover{
+		box-shadow : 0 2px 20px #333;
+}
+.price-head{
+	background-color : #2196f3;
+	display : block;
+	float : left;
+	padding : 10px 5px;
+	text-align : center;
+	width : 100%;
+}
+.price-head h2{
+	color : #fff;
+	font-size : 30px;
+	font-weight : bold;
+	margin-bottom : 5px;
+	padding : 5px 10px;
+	text-transform : upppercase;
+}
+.price-head p{
+	font-size : 25px;
+	color : #ccc;
+	font-weight : bold;
+	line-height : 30px;
+}
+#price span{
+	font-size : 15px;
+}
+.price-content{
+	display : inline;
+	float : left;
+	width : 100%;
+	padding : 0 15px;
+}
+.price-content ul li{
+	border-bottom: 1px solid #ccc;
+	padding : 15px 10px;
+	list-style : none;
+}
+ul li:last-child{
+	border: none;
+}
+.fa-check-circle{
+	color : color;
+	margin-right : 10px;
+	font-size : 20px;
+}
+.price-button{
+	display : inline;
+	float : left;
+	padding : 15px 15px 30px;
+	text-align : center;
+	width : 100%;
+}
+.buy-btn{
+	background-color : #2196f3;
+	border-radius : 3px;
+	display : inline-block;
+	font-size : 18px;
+	padding : 15px 50px;
+	transition : 0.5s;
+}
+.buy-btn:hover{
+	border : 1px solid #fff;
+	background-color : #3f51b5;
+}
+a{
+	text-decoration : none ! important;
+	color : #fff ! important;
+}
+
+/*-----------Honey Places-------------*/
+#honey-places{
+	padding-top : 50px;
+	padding-bottom : 50px;
+}
+.honeyplaces{
+	height : 500px;
+	width : 100%;
+	display : flex;
+	margin : 5% auto 0;
+	box-sizing : border-box;
+}
+.img-box{
+	margin : 0 1%;
+	flex-grow : 1;
+	flex-basis : 0;
+	transition : 0.5s;
+}
+.img-box img{
+	width : 100%;
+	height : 100%;
+	object-fit : cover;
+	transition : 0.5s;
+}
+.img-box:hover{
+	flex-basis : 50%;
+}
+.active{
+	flex-basis : 50%;
+}
+.honeyplaces:hover .active{
+	flex-basis : 0;
+}
+.img-box:nth-child(1):hover{
+	flex-basis : 50%;
+}
+
+/*---------Contact Section---------*/
+#contact{
+	padding-top : 50px;
+	padding-bottom : 20px;
+	background-color : #ccc;
+}
+.contact-form{
+	margin : 0px auto;
+	width : 50%;
+}
+.social ul li{
+	display : inline-flex;
+	padding : 10px;
+}
+.social .fa{
+	height : 30px;
+	width : 30px;
+	background-color : #efefef!important;
+	color : blue;
+	padding : 5px;
+	border-radius : 50%;
+	box-shadow : 1px 1px 2px 2px #07bfff;
+}
+.social .fa:hover{
+	box-shadow : inset 1px 1px 2px #07bfff;
+}
+
+/*---------Foooter------------*/
+#footer{
+	color : white;
+	background-color : #355;
+	padding-top : 7px;
+	padding-bottom : 7px;
+}
